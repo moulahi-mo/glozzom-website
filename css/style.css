@@ -1,7 +1,125 @@
 
-/*variables */
+/*init */
 
 :root {
   --color1:#e0e0e0 ;
   --color2:#1f1f1f ;
+}
+
+body{
+  position:relative;
+  
+}
+
+/*** navbar ***/
+nav{
+  opacity:0.8;
+  background-color: transparent !important;
+}
+.navbar-link {
+  text-decoration:none !important;
+  text-transform:uppercase;
+
+ 
+}
+nav ul a:hover {
+ color:rgba(f,f,f,1);
+}
+nav ul li{
+  padding:0 15px;
+
+}
+nav a:first-letter{
+  font-size:1.3rem;
+  font-style:italic;
+  font-weight:bold;
+}
+/****header ***/
+.carousel-inner img {
+
+  width:auto;
+  max-height:760px !important;
+  min-height:400px !important;
+  
+
+
+
+}
+
+/***** section features ****/
+.features i{
+  font-size:6rem;
+
+}
+/***** section ready ****/
+
+.pc .jumbotron-fluid {
+  background-image:url('../img/lights.jpg');
+  background-attachment: fixed;
+}
+.ready{
+  background:rbga(0,0,0,0.8) !important;
+}
+
+/***** section pc ****/
+
+
+.see .jumbotron {
+  background-image:url('../img/media.jpg');
+  background-attachment: fixed;
+}
+
+/***** section see ****/
+.see i {
+  font-size:2rem;
+}
+
+/***** section galery ****/
+.galery img{
+cursor:pointer;
+}
+
+
+
+/*********footer ********/
+footer{
+  background-color:#000;
+}
+
+/************* ABOUT PAGE ***********************************************************/
+
+
+/***************banner*************/
+.about-banner {
+
+  max-height:400px !important;
+}
+.about-banner .jumbotron {
+  background-image:url(../img/image1.jpg) ;
+  background-attachment:fixed ;
+ 
+}
+
+
+
+/************** section What We Do ************/
+.about-do img{
+  margin-top:-50px !important;
+}
+
+
+
+
+/************* Services PAGE ***********************************************************/
+
+
+/***************banner*************/
+.about-banner {
+
+  max-height:400px !important;
+}
+.about-banner .jumbotron {
+  background-image:url(../img/image2.jpg) ;
+  background-attachment:fixed ;
+ 
 }
