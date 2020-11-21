@@ -4,8 +4,16 @@
   
      <!-- Required meta tags -->
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <!-- Bootstrap CSS -->
+   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  
+ <!--animate=====
+	 
+	 class="animate__animated animate__<Name of animation>-->
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
+   <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="frame/bootstrap.min.css">
  <!--Mains css style-->
 
@@ -15,7 +23,7 @@
   </head>
   <body data-spy="scroll" data-target="#nav1">
 <!--navbar-->
-<nav class="navbar navbar-light navbar-expand-sm fixed-top" id="nav1" style="background-color: transparent !important;">
+<nav class="navbar navbar-dark navbar-expand-sm fixed-top" id="nav1" >
   <div class="container">
     <a href="#" class="navbar-brand text-light h3">Glozzom</a>
     <button class="navbar-toggler bg-secondary border-0 btn-sm" data-target="#navtoggle" data-toggle="collapse">
@@ -120,8 +128,8 @@
 
 <!--section features -->
 
-<section  class="pc" >
-  <div class="ready">
+<section  class="pc ">
+  <div class="ready black-over">
   <div class="jumbotron jumbotron-fluid py-5">
     <div class="container text-center text-white">
       <h2 class="display-3 pb-1">Are You Ready To Get Started?</h2>
@@ -148,9 +156,9 @@
 </section>
 <!--section see -->
 
-<section class="see">
+<section class="see ">
   
-  <div class="jumbotron jumbotron-fluid py-5">
+  <div class="jumbotron jumbotron-fluid py-5 ">
     <div class="container text-center text-white">
 
       <button class="btn btn-danger btn-sm" data-toggle="modal" data-target="#modal"><i class="fas fa-play "></i></button>
@@ -184,14 +192,14 @@
 
 <!-- section Galery -->
 
-<section class="galery">
+<section class="galery ">
   <div class="container">
-    <div class="row row-cols-1 text-center">
+    <div class="row row-cols-1 text-center animate__animated animate__fadeInLeftBig animate__delay-3s">
       <h2>Photo Gallery</h2>
       <h6 class="text-muted">Check out our photos</h6>
     </div>
  
-  <div class="row row-cols-1  row-cols-md-3 mt-5 mb-3">
+  <div class=" row row-cols-1  row-cols-md-3 mt-5 mb-3">
     <img src="https://source.unsplash.com/random/560x560" class="img-fluid rounded-lg col my-2" alt="">
     <img src="https://source.unsplash.com/random/561x561" class="img-fluid rounded-lg col my-2" alt="">
     <img src="https://source.unsplash.com/random/562x562" class="img-fluid rounded-lg col my-2" alt="">
@@ -202,6 +210,26 @@
     <img src="https://source.unsplash.com/random/565x565" class="img-fluid rounded-lg col my-2" alt="">
   </div>
 </div>
+
+
+<!--Modal Galery -->
+<div class="wrapper d-none">
+  <div class=" modalG">
+    <div class="modalG-header bg-dark">
+      <span class="ml-auto d-block text-white close">&times;</span>
+    </div>
+    <div class="modalG-body ">
+      <img src="https://source.unsplash.com/random/562x562" alt="" class="img-fluid w-100 h-100 ">
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
 </section>
 
 <!--footer-->
@@ -212,7 +240,7 @@
    <form  class="form-inline d-flex flex-column flex-md-row justify-content-md-center align-items-stretch">
      <input type="text" name="" id="" class="form-control m-2  " placeholder="Name..">
      <input type="email" name="" id="" class="form-control m-2 " placeholder="Email..">
-     <button type="submit" class="btn btn-outline-primary btn-lg m-2">Submit</button>
+     <button type="submit" class="btn btn-outline-primary  m-2">Submit</button>
    </form>
   </div>
 </section>

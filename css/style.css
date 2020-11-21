@@ -10,11 +10,21 @@ body{
   position:relative;
   
 }
-
+.black-over{
+  position:absolute;
+  top:0;
+  left:0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.8) !important;
+}
 /*** navbar ***/
-nav{
-  opacity:0.8;
-  background-color: transparent !important;
+#nav1{
+  background-color: transparent ;
+}
+.navdark{
+  opacity:0.8 !important;
+  background-color: #000 !important;
 }
 .navbar-link {
   text-decoration:none !important;
@@ -57,12 +67,13 @@ nav a:first-letter{
   background-image:url('../img/lights.jpg');
   background-attachment: fixed;
 }
-.ready{
-  background:rbga(0,0,0,0.8) !important;
-}
+
 
 /***** section pc ****/
-
+.pc,.see{
+  position: relative;
+  min-height:266px;
+}
 
 .see .jumbotron {
   background-image:url('../img/media.jpg');
@@ -74,13 +85,41 @@ nav a:first-letter{
   font-size:2rem;
 }
 
+
 /***** section galery ****/
+.galery{
+  position:relative;
+}
 .galery img{
 cursor:pointer;
 }
 
+/**Modal Galery */
+.wrapper {
+  background-color:rgba(0,0,0,0.7);
+  width: 100%;
+  height:100%;
+  position:absolute;
+  top:0;
+  left:0;
+  
+}
+.wrapper .modalG{
+  background:#fff;
+  width:35%;
+  height:50%;
+  position:absolute;
+  top:128px;
+  left:35%;
 
-
+}
+.modalG-header{
+  width:100%;
+  height:25px;
+}
+.modalG-header .close{
+cursor:pointer;
+}
 /*********footer ********/
 footer{
   background-color:#000;
@@ -123,3 +162,29 @@ footer{
   background-attachment:fixed ;
  
 }
+
+/************* Blog PAGE ***********************************************************/
+/***************banner*************/
+.blog-banner {
+
+  max-height:400px !important;
+}
+.blog-banner .jumbotron {
+  background-image:url(../img/image3.jpg) ;
+  background-attachment:fixed ;
+ 
+}
+
+/************* contact PAGE ***********************************************************/
+/***************banner*************/
+.contact-banner {
+
+  max-height:400px !important;
+}
+.contact-banner .jumbotron {
+  background-image:url(../img/image1.jpg) ;
+  background-attachment:fixed ;
+ 
+}
+
+
